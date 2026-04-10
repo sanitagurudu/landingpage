@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">DemoBrand</div>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#moment">Showcase</a></li>
+          <li><a class="btn" href="#contact">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Building Clean & Modern Web Experiences</h1>
+      <p>
+        A sample landing page created to demonstrate responsive UI, layout structure,
+        and simple animations.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#services" class="hero-btn">Explore Services</a>
+        <a href="#moment" class="hero-btn hero-btn--outline">View Showcase</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services" id="services">
+    <div class="container-col">
+      <h2 class="section-title">Services</h2>
+      <p class="section-subtitle">
+        A quick overview of what this sample website demonstrates.
+      </p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">⚡</div>
+          <h3>Responsive Layout</h3>
+          <p>Mobile-first layout using modern flex/grid patterns for clean UI across devices.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>Modern Styling</h3>
+          <p>Consistent spacing, typography, button states, and smooth hover interactions.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🧩</div>
+          <h3>Reusable Sections</h3>
+          <p>Structured sections that are easy to extend with more pages, content, or animations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COLLAGE + MARQUEE SECTION ===== -->
+  <section class="collage-banner" id="moment">
+    <div class="collage-wrap">
+
+      <!-- Marquee overlay -->
+      <div class="marquee" aria-label="Moving headline">
+        <div class="marquee__track">
+          <span>Celebrate Every Moment ✦ Crafted Experiences ✦ Timeless Design ✦ </span>
+          <span>Celebrate Every Moment ✦ Crafted Experiences ✦ Timeless Design ✦ </span>
+        </div>
+      </div>
+
+      <!-- Image collage -->
+      <!-- <div class="collage-grid" aria-label="Image collage">
+        <div class="tile tile-1">
+          <img src="images/photo1.jpg" alt="Showcase image 1" loading="lazy" />
+        </div>
+
+        <div class="tile tile-2">
+          <img src="images/photo2.jpg" alt="Showcase image 2" loading="lazy" />
+        </div>
+
+        <div class="tile tile-3">
+          <img src="images/photo3.jpg" alt="Showcase image 3" loading="lazy" />
+        </div>
+
+        <div class="tile tile-4">
+          <img src="images/photo4.jpg" alt="Showcase image 4" loading="lazy" />
+        </div>
+
+        <div class="tile tile-5">
+          <img src="images/photo5.jpg" alt="Showcase image 5" loading="lazy" />
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- ===== FAQ SECTION ===== -->
+  <section class="faq-section" id="faq">
+    <div class="faq-container">
+      <!-- Left: FAQ content -->
+      <div class="faq-left">
+        <h2 class="faq-title">FAQs</h2>
+
+        <a class="faq-btn" href="#" download>
+          Download Brochure <span class="faq-btn-icon">⬇</span>
+        </a>
+
+        <div class="faq-accordion" role="region" aria-label="Frequently Asked Questions">
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              What is the difference between a sample project and a client project?
+            </summary>
+            <div class="faq-answer">
+              A sample project is created for learning and demonstration using generic branding and content.
+              A client project typically contains proprietary branding, assets, and business content.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Can this layout work on mobile devices?</summary>
+            <div class="faq-answer">
+              Yes. The section is responsive: the image stacks below the FAQs on smaller screens and spacing adjusts automatically.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Can I add more questions in the same style?</summary>
+            <div class="faq-answer">
+              Yes. Copy one <code>&lt;details&gt;</code> block and change the question and answer text.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Can I link a real brochure PDF here?</summary>
+            <div class="faq-answer">
+              Yes. Replace the <code>href</code> in the “Download Brochure” button with your PDF file (example: <code>brochure.pdf</code>) and upload it to your repo.
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Right: Image panel -->
+      <div class="faq-right">
+        <div class="faq-image-panel">
+          <img src="images/faq-side.jpg" alt="Decorative image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact" id="contact">
+    <div class="container-col">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">Share your details and I will get back to you.</p>
+
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+
+        <p class="note">This is a sample form UI for demonstration.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-logo">DemoBrand</div>
+        <p class="footer-text">Sample landing page built for portfolio demonstration.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#moment">Showcase</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> DemoBrand. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
